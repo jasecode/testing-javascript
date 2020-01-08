@@ -21,6 +21,8 @@ function subtractZero() {
 }
 test('test if Negative numbers exist from subtraction', subtractZero)
 
+
+// Practice using arrow functions
 test('Test Sum Numbers Arrow', () => {
     const result = sum(3, 7)
     const expected = 10
@@ -41,12 +43,12 @@ function expect(actual){
     return {
         toBe(expected) {
             if(actual !== expected) {
-                throw new Error(`${result} is not equal to ${expected}`)
+                throw new Error(`${actual} is not equal to ${expected}`)
             }
         },
         toBeGreaterThan(expected) {
             if(actual >= expected) {
-                throw new Error(`${result} is greater than ${expected}`)
+                throw new Error(`${actual} is greater than ${expected}`)
             }
         }
     }
