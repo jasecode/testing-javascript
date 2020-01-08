@@ -22,16 +22,23 @@ function subtractZero() {
 test('test if Negative numbers exist from subtraction', subtractZero)
 
 
-// Practice using arrow functions
+/* Practice using arrow functions */
 test('Test Sum Numbers Arrow', () => {
     const result = sum(3, 7)
     const expected = 10
     expect(result).toBe(expected)
 })
 
-function test(title, callback) {
+/* Pracice understanding Async */ 
+test('Testing Async Sum Numbers', async () => {
+    const result = await sum(3, 7, 4)
+    const expected = 14
+    expect(result).toBe(expected)
+})
+
+async function test(title, callback) {
     try {
-        callback()
+        await callback()
         console.log(`✓ ${title}`)
     } catch (error) {
         console.error(`✗ ${title}`)
