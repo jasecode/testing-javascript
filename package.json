@@ -1,0 +1,14 @@
+{
+  "name": "testing-javascript",
+  "version": "1.0.0",
+  "description": "Testing Javascript Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "jzhang",
+  "license": "ISC",
+  "dependencies": {
+    "math": "0.0.3"
+  }
+}
